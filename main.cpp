@@ -20,23 +20,23 @@ using namespace std;
 
 
 
-
-int main()
-{
-    int A;
-    std::cin >> A;
-
-    int B;
-    std::cin >> B;
-
-    int degrees;
-    std::cin >> degrees;
-    //созд. перемен. Получает и сохран. данные
-    return 0;
-}
-
-double degrees_to_radians(double degrees)
+double degrees_to_radians(double degrees)   //приобразует градусы в радианы
 {
     return degrees * M_PI / 180.0;
 }
-//приобразует градусы в радианы
+
+int main()  //созд. перемен. Получает и сохран. данные
+{
+    double A;
+    std::cin >> A;
+
+    double B;
+    std::cin >> B;
+
+    double degrees;
+    std::cin >> degrees;
+    double radians = degrees_to_radians(degrees); //радианы
+
+
+
+}
