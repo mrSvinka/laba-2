@@ -1,5 +1,8 @@
 #include <iostream>
 #include <limits>
+#include <cmath>
+#define _USE_MATH_DEFINES
+#include <math.h>
 using namespace std;
 /*
 Вариант 9.
@@ -14,6 +17,10 @@ using namespace std;
                         треугольник заведомо существует*
 
 */
+
+
+
+
 int main()
 {
     int A;
@@ -22,14 +29,14 @@ int main()
     int B;
     std::cin >> B;
 
-    int a;
-    std::cin >> a;
-
-
-
-
-
-
-
+    int degrees;
+    std::cin >> degrees;
+    //созд. перемен. Получает и сохран. данные
     return 0;
 }
+
+double degrees_to_radians(double degrees)
+{
+    return degrees * M_PI / 180.0;
+}
+//приобразует градусы в радианы
